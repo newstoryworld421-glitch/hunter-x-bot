@@ -5,9 +5,10 @@ import os
 TOKEN = os.getenv("8997747937:AAGpQKTtb2tEoBONXr6eW73TFPPqV_RwnSU")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("⚔️ Hunter X Bot Online!")
+    await update.message.reply_text("⚔️ Hunter X RPG Bot is online!")
 
 app = Application.builder().token(TOKEN).build()
+
 app.add_handler(CommandHandler("start", start))
 
 app.run_polling()
